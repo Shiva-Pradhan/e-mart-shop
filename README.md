@@ -19,7 +19,6 @@ E-Mart is a modern, responsive front-end e-commerce web application built using 
 ## 📁 Project Structure
 
 E-Mart/
-│
 ├── index.html        # Main HTML file
 ├── style.css         # Styling file
 ├── script.js         # JavaScript logic
