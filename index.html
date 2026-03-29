@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Mart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="msg"></div>
+
+<header>
+<h2 onclick="goHome()">E-Mart</h2>
+
+<div class="search-box">
+<input id="search" placeholder="Search products here" onkeyup="searchProducts()">
+</div>
+
+<div>
+<button onclick="goHome()">Home</button>
+<button onclick="showLogin()">Login</button>
+<button onclick="showSignup()">Signup</button>
+<button onclick="showCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+</div>
+</header>
+
+<div class="hero" id="heroSlider"></div> 
+
+<div class="highlight">🔥 Big Sales Today</div>
+
+<div class="top-filters">
+<select id="category" onchange="applyFilters()">
+<option value="all">Category</option>
+<option value="fashion">Fashion</option>
+<option value="electronics">Electronics</option>
+<option value="furniture">Furniture</option>
+<option value="books">Books</option>
+</select>
+
+<select id="price" onchange="applyFilters()">
+<option value="all">Price</option>
+<option value="1000">Below 1000</option>
+<option value="5000">Below 5000</option>
+<option value="50000">Below 50000</option>
+<option value="100000">Below 1 Lakh</option>
+</select>
+
+<select id="rating" onchange="applyFilters()">
+<option value="all">Rating</option>
+<option value="2">2★+</option>
+<option value="3">3★+</option>
+<option value="4">4★+</option>
+<option value="5">5★</option>
+</select>
+
+<select id="type" onchange="applyFilters()" style="display:none;">
+<option value="all">Type</option>
+<option value="men">Men</option>
+<option value="women">Women</option>
+<option value="boys">Boys</option>
+<option value="girls">Girls</option>
+</select>
+
+</div>
+
+<div id="content"></div>
+
+<div id="modal" class="modal hidden"></div>
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+  <!-- ABOUT -->
+  <div class="footer-box">
+    <h3>E-Mart</h3>
+    <p>Shop Smart, Live Better.</p>
+    <p>India’s trusted online shopping platform for fashion, electronics & more.</p>
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div class="footer-box">
+    <h3>Quick Links</h3>
+    <p>Home</p>
+    <p>Products</p>
+    <p>Offers</p>
+    <p>Deals</p>
+  </div>
+
+  <!-- SUPPORT -->
+  <div class="footer-box">
+    <h3>Support</h3>
+    <p>Help Center</p>
+    <p>Returns</p>
+    <p>Shipping Info</p>
+    <p>FAQs</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="footer-box">
+    <h3>Contact</h3>
+    <p>Email: support@emart.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>24/7 Customer Support</p>
+  </div>
+
+</div>
+
+<p class="copy">© 2026 E-Mart | All Rights Reserved</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
