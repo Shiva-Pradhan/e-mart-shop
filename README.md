@@ -52,5 +52,5 @@ E-Mart/
 - Order history system
 
 ## 🌐 Live Demo :
-Live demo : https://shiva-pradhan.github.io/E-mart-shop
+https://shiva-pradhan.github.io/E-mart-shop
 
